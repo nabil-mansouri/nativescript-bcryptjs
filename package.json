@@ -1,0 +1,40 @@
+{
+  "name": "nativescript-bcryptjs",
+  "version": "1.0.0",
+  "description": "A NativeScript of bcrypt.js plugin",
+  "main": "index",
+  "typings": "index.d.ts",
+  "nativescript": {
+    "platforms": {
+      "android": "2.5.0",
+      "ios": "2.5.0"
+    }
+  }, 
+  "scripts": {
+    "watch": "tsc --watch;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nabil-mansouri/nativescript-bcryptjs.git"
+  },
+  "keywords": [
+    "bcrypt",
+    "bcrypt.js",
+    "crypto",
+    "nativescript"
+  ],
+  "author": {
+    "name": "Nabil Mansouri",
+    "email": "nabil.mansouri.3@gmail.com",
+    "url": "http://e-devservice.com/"
+  },
+  "license": "GNU General Public License 3",
+  "devDependencies": {
+    "tns-core-modules": "^2.5.0",
+    "tns-platform-declarations": "^2.5.0"
+  },
+  "dependencies": { 
+    "bcryptjs": "^2.4.3",
+    "buffer": "^5.0.6"
+  }
+}

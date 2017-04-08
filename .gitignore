@@ -1,0 +1,11 @@
+node_modules/
+
+tests/node_modules/
+tests/platforms/
+
+npm_debug.log
+
+.DS_Store*
+Thumbs.db*
+*.js
+*.js.map
