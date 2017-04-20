@@ -8,7 +8,15 @@ A nativescript plugin that integrate bcrypt.js plugin in order to hash, compare 
 
 # How to use it
 ```typescript
-require('nativescript-bcryptjs');
-let bcrypt = require('bcryptjs');
-bcrypt.hashSync("PASSWORD", 4)
+import {bcrypt} from ('nativescript-bcryptjs');
+let salt = bcrypt.genSaltSync(10);
+let hash2 = bcrypt.hashSync("password", salt);
+let hash = bcrypt.hashSync("password", 4);
+let comp = bcrypt.compareSync("password", hash);
+bcrypt.genSalt(10, (err, salt) => {
+    bcrypt.hash("B4c0/\/", salt, (err, hash) => {
+        bcrypt.compare("B4c0/\/", hash, function (err, res) {
+        });
+    });
+});
 ```
